@@ -1,0 +1,46 @@
+.inventore{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    color: red;
+}
+.food{
+    border: 3px solid rgb(31, 234, 88);
+    padding: 10px;
+    border-radius: 10px;
+    
+}
+/* smaller device */
+@media screen and (max-width:576px) {
+    .inventore{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .food{
+        background-color: blueviolet;
+    }
+}
+/* medium device */
+@media screen and (min-width: 576px) and (max-width:992px){
+    .inventore{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+.imge-consecter{
+    display: flex;
+
+}
+
+.imge-consecter div{
+    width: 100%;
+}
+.imge-consecter img{
+    width: 90%;
+}
+@media  screen and (max-width:576px) {
+    .imge-consecter{
+        flex-direction: column-reverse;
+    }
+    
+}
